@@ -3,6 +3,8 @@ const productos = [
     { nombre: "Pantalon", price: 10000 },
     { nombre: "Remera", price: 20000 },
     { nombre: "Zapatilla", price: 30000 },
+    { nombre: "Campera", price: 30000 },
+    { nombre: "Bufanda", price: 30000 },
 ];
 
 let itemsCarrito = [];
