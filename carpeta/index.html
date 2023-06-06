@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportWoman - Adrogue</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../medios/logosport.png" alt="Logo del Local">
+        </div>
+        <div class="contacto">
+            <a href="../pages/contacto.html">Contacto</a>
+        </div>
+        <div class="contacto">
+            <a href="./index.html">Inicio</a>
+        </div>
+    </nav>
+    <div class="content" id="productos-page">
+        <h1>Productos</h1>
+        <div id="productos-container" class="productos-container">
+            <div class="producto-card">
+                <button class="add-to-cart-button">Agregar al carrito</button>
+            </div>
+            <div class="producto-card">
+                <button class="add-to-cart-button">Agregar al carrito</button>
+            </div>
+            <div class="producto-card">
+                <button class="add-to-cart-button">Agregar al carrito</button>
+            </div>
+        </div>
+        <button class="ircompra" id="go-to-purchase-button">Ir a la compra</button>
+    </div>
+
+    <div class="content" id="purchase-page" style="display: none;">
+        <h1>Carrito de compras</h1>
+        <div id="cart-container" class="cart-container"></div>
+        <p id="purchase-summary"></p>
+        <input type="text" id="codigo-descuento" placeholder="Código de descuento">
+        <button class="finalizar" id="purchase-button">Finalizar compra</button>
+        <button class="volver" id="go-to-productos-button">Volver a los productos</button>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <a href="../pages/contacto.html" class="contact-link">Contacto</a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
