@@ -10,7 +10,7 @@ function showProductos() {
 
   productosContainer.innerHTML = "";
 
-  // Utilizamos Fetch para obtener los productos desde una API 
+  // Utilizo Fetch para obtener los productos desde una API 
   fetch("http://localhost:3011/productos")
     .then((response) => response.json())
     .then((data) => {
