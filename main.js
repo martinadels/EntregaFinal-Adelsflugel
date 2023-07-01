@@ -64,6 +64,7 @@ function updateItemsCarritoCount() {
 
 // Función para mostrar el contenido del carrito
 function showCart() {
+  console.log(itemsCarrito);
   const cartContainer = document.getElementById("cart-container");
   if (!cartContainer) return;
 
@@ -125,7 +126,7 @@ function finishPurchase() {
     )}, IVA: $${iva.toFixed(2)}, Descuento: $${descuento.toFixed(2)}`;
   }
 
-  itemsCarrito = [];
+  //itemsCarrito = [];
   updateItemsCarritoCount();
   showCart();
   
@@ -155,15 +156,18 @@ if (goToPurchaseButton) {
 
 // Evento para mostrar la página de productos
 const goToProductosButton = document.getElementById("go-to-productos-button");
+
 if (goToProductosButton) {
   goToProductosButton.addEventListener("click", () => {
     const productosPage = document.getElementById("productos-page");
     const purchasePage = document.getElementById("purchase-page");
-
+    console.log(itemsCarrito);
     if (productosPage && purchasePage) {
       productosPage.style.display = "block";
       purchasePage.style.display = "none";
+      //showCart()
     }
+    
   });
 }
 
