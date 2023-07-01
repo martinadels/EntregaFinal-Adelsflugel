@@ -10,7 +10,7 @@ function showProductos() {
 
   productosContainer.innerHTML = "";
   // Utilizo Fetch para obtener los productos desde una API 
-  fetch("http://localhost:3011/productos")
+  fetch("productos.json")
     .then((response) => response.json())
     .then((data) => {
       productos.push(...data);
