@@ -19,3 +19,5 @@ module.exports = productos;
 app.listen(port, () => {
   console.log(`Servidor escuchando en http://localhost:${port}`);
 });
+
+//Este archivo si bien esta completo, no lo estoy usando para mostrar los productos
