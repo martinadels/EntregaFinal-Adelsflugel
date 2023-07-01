@@ -9,7 +9,6 @@ function showProductos() {
   if (!productosContainer) return;
 
   productosContainer.innerHTML = "";
-
   // Utilizo Fetch para obtener los productos desde una API 
   fetch("http://localhost:3011/productos")
     .then((response) => response.json())
@@ -45,6 +44,7 @@ function showProductos() {
     })
     .catch ((error) => {
   console.log("Error al obtener los productos:", error);
+  console.log(productos);
 });
 }
 

@@ -15,7 +15,7 @@ app.get("/productos", (req, res) => {
 
   res.json(productos);
 });
-
+module.exports = productos;
 app.listen(port, () => {
   console.log(`Servidor escuchando en http://localhost:${port}`);
 });
